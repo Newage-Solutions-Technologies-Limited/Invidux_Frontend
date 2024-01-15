@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
+
+html,body{
+  font-family: 'Inter', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  @apply font-bold;
+}
+.paddingX{
+  @apply px-[5%];
+}
+
+/* Slideshow */
+.slideshow {
+  overflow: hidden;
+  max-width: 660px;
+  height: 100%;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  display: inline-block;
+  height: 928px;
+  width: 100%;
+}
+
+/* Buttons */
+.slideshowDots {
+  text-align: center;
+}
+.slideshowDot {
+  display: inline-block;
+  height: 3px;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 15px 7px 0px;
+
+  background-color: #c4c4c4;
+}
+.slideshowDot.active {
+  background-color: #fff;
+}
